@@ -5,13 +5,13 @@ function App() {
   const [signal, setSignal] = useState("Awaiting the Sovereign Handshake...");
 
   useEffect(() => {
-    // The Broadcaster reaches out to the Receiver
-    axios.get('http://localhost:5000/')
+    // The Broadcaster reaches out to the ETERNAL Receiver on Render
+    axios.get('https://sovereign-server-tgvz.onrender.com/')
       .then((response) => {
         setSignal(response.data);
       })
       .catch((error) => {
-        setSignal("The Curse of the Localhost attempts to block the signal...");
+        setSignal("The Curse attempts to block the signal...");
       });
   }, []);
 
