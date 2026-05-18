@@ -1,0 +1,14 @@
+# Ignore the heavy machinery of dependencies
+node_modules/
+server/node_modules/
+client/node_modules/
+
+# Ignore the private keys to the sanctuary
+.env
+server/.env
+
+# Ignore production builds and local noise
+dist/
+client/dist/
+.DS_Store
+Thumbs.db
